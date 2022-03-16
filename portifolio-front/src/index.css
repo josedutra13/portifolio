@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+:root {
+    --color-primary: #00DF5E;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    color: #F9F9F9;
+}
+
+html,
+body {
+    background-color: #171717;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
