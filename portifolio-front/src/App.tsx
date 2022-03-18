@@ -1,6 +1,7 @@
 import About from 'components/About';
-import Information from 'components/Information';
 import { Layout } from 'components/Layout';
+import Projects from 'components/Projects';
+import Tecnology from 'components/Tecnologys';
 import Welcome from 'components/Welcome';
 import React from 'react';
 import NavBar from './components/NavBar';
@@ -12,7 +13,8 @@ function App() {
       <Layout>
         <Welcome/>
         <About/>
-        <Information/>
+        <Projects/>
+        <Tecnology/>
       </Layout>
     </React.Fragment>
 

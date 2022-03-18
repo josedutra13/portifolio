@@ -3,21 +3,22 @@ import {Col, Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 
 const WelcomeStyle = styled.div`
-       margin-top:45px;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin: 15% 0 0 10%;
 `;
 
 const H2Welcome = styled.h2`
   width: 300px;
   height: 94px;
-  left: 150px;
-  top: 212px;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 47px;
   color: #F9F9F9;
-  margin-bottom: 20px;
+  margin-bottom:5%;
 `;
 
 const Paragrath = styled.p`
