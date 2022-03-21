@@ -10,16 +10,16 @@ const Style = styled.div`
       justify-content: end;
   }
   
-
   .navbar-brand{
      font-weight: 700;
      font-size: 26px;
   }
 
   .nav-link{
-    font-weight: 400;
+    margin-left: 1rem; 
+    font-weight: 400; 
     font-size: 18px;
-    text-align: end;
+    text-align: start;
   }
 `
 
@@ -27,7 +27,7 @@ const Style = styled.div`
 function NavBar() {
     return (
         <Style>
-            <Navbar collapseOnSelect expand="lg" variant="dark" fixed='top'>
+            <Navbar collapseOnSelect expand="lg" variant="dark">
                 <Container>
                     <Navbar.Brand href="#welcome">Portifólio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

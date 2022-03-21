@@ -8,7 +8,7 @@ const Abouth2 = styled.h2`
    font-size: 32px;
    line-height: 42px;
    text-align: center;
-   margin: 10% 0 2% 0;
+   margin: 13% 0 2% 0;
 `
 const Aboutp = styled.p`
   font-weight: 400;
