@@ -8,7 +8,7 @@ const WelcomeStyle = styled.div`
   display:flex;
   justify-content: center;
   align-items:center;
-  margin: 13% 0 0 10%;
+  margin: 10% 0 0 10%;
 
   #profilePic{
     width:100%;
