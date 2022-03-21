@@ -9,6 +9,11 @@ const WelcomeStyle = styled.div`
   justify-content: center;
   align-items:center;
   margin: 15% 0 0 10%;
+
+  #profilePic{
+    width:100%;
+    height:100%;
+  }
 `;
 
 const H2Welcome = styled.h2`
@@ -86,7 +91,7 @@ function Welcome() {
                         <ButtonContact ><a target={"_blank"} href='https://github.com/josedutra13' rel="noreferrer"> <LogoGit id='logoGit'/>josedutra13</a> </ButtonContact>
                     </Col>
                     <Col md={4}>
-                    <Profile className='imagem-profile'></Profile></Col>
+                    <Profile id='profilePic'></Profile></Col>
                 </Row>
             </Container>
         </WelcomeStyle>
