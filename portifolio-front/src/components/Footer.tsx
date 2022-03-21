@@ -8,7 +8,7 @@ const FooterDiv = styled.footer`
 `
 
 const FooterP = styled.p`
-  padding-top:1%;
+  padding-top:5%;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;

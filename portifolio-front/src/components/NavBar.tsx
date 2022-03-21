@@ -1,7 +1,7 @@
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 
-const Style = styled.div`
+const Style = styled.header`
   .navbar{
     background-color: #171717;
   }
@@ -27,13 +27,13 @@ const Style = styled.div`
 function NavBar() {
     return (
         <Style>
-            <Navbar collapseOnSelect expand="lg" variant="dark">
+            <Navbar collapseOnSelect expand="lg" variant="dark" sticky='top' >
                 <Container>
                     <Navbar.Brand href="#welcome">Portifólio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
-                            <Nav.Link href="#about" >Sobre mim</Nav.Link>
+                            <Nav.Link href="#about">Sobre mim</Nav.Link>
                             <Nav.Link href="#projects">Projetos</Nav.Link>
                             <Nav.Link href="#skills">Minhas skills</Nav.Link>
                         </Nav>
