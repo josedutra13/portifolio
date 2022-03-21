@@ -5,6 +5,11 @@ const Style = styled.div`
   .navbar{
     background-color: #171717;
   }
+  
+  #responsive-navbar-nav{
+      justify-content: end;
+  }
+  
 
   .navbar-brand{
      font-weight: 700;
@@ -14,6 +19,7 @@ const Style = styled.div`
   .nav-link{
     font-weight: 400;
     font-size: 18px;
+    text-align: end;
   }
 `
 
@@ -21,15 +27,14 @@ const Style = styled.div`
 function NavBar() {
     return (
         <Style>
-            <Navbar variant="dark" expand="lg" fixed="top">
+            <Navbar collapseOnSelect expand="lg" variant="dark" fixed='top'>
                 <Container>
-                    <Navbar.Brand href="#home" className='portifolio-title'>Portifólio</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav" >
-                        <Nav className='portifolio-links position-absolute top-25 end-0 translate-middle-x'>
+                    <Navbar.Brand href="#welcome">Portifólio</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav>
                             <Nav.Link href="#about" >Sobre mim</Nav.Link>
                             <Nav.Link href="#projects">Projetos</Nav.Link>
-                            {/* <Nav.Link href="#service">Serviços</Nav.Link> */}
                             <Nav.Link href="#skills">Minhas skills</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

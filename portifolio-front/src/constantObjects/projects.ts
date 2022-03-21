@@ -1,6 +1,6 @@
 import bytebank from 'assets/img/bytebank.png';
 import freeway from 'assets/img/freeway.png';
-import dsmovie from 'assets/img/dsmovie.jpg';
+import dsmovie from 'assets/img/dsmovie.png';
 
 
 export const ProjectsObject = [
@@ -8,7 +8,7 @@ export const ProjectsObject = [
         id: 0,
         img: bytebank,
         titulo: "Bytebank",
-        tecnologias: "Flutter",
+        tecnologias: "Flutter, SQlite",
         link:"https://github.com/josedutra13/bytebank_formsvalid"
     },
     {   

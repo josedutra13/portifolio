@@ -1,11 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
+import { Logos } from "constantObjects/logos";
 import styled from "styled-components";
-import { ReactComponent as CssLogo } from "assets/img/technologys/css.svg";
-import { ReactComponent as HtmlLogo } from "assets/img/technologys/html.svg";
-import { ReactComponent as JsLogo } from "assets/img/technologys/js.svg";
-import { ReactComponent as ReactLogo } from "assets/img/technologys/react.svg";
-import { ReactComponent as FlutterLogo } from "assets/img/technologys/flutter.svg";
-import { ReactComponent as SpringLogo } from "assets/img/technologys/spring.svg";
+
 
 
 const TechH2 = styled.h2`
@@ -25,20 +21,26 @@ const Techs = styled.div`
   width: 150px;
   height: 150px;
   background: #212121;
-  margin: 17% 0 10% 15%;
+  margin: 17% 0 10% 18%;
+
+  @media(max-width: 575px){
+     margin-left: 35%;
+  }
+  @media(max-width: 414px){
+    margin-left:29%;
+}
 `
 
 
 function Tecnology() {
 
-    const logos = [<CssLogo />, <HtmlLogo />, <JsLogo />, <ReactLogo />, <FlutterLogo />, <SpringLogo />];
+    const logos = Logos;
 
     return (
-        
-        <Container>
+        <Container id="skills">
             <TechH2>Minhas skills</TechH2>
             <Row>
-                {logos.map(e => <Col sm={6} md={4} lg={2}><Techs>{e}</Techs></Col>)}
+                {logos.map(e => <Col key={e.id} sm={6} md={4} lg={2}><Techs>{e.logo}</Techs></Col>)}
             </Row>
         </Container>)
 }

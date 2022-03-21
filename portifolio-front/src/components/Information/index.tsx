@@ -1,9 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
-import { ReactComponent as SmileIcon } from 'assets/icons/smileIcon.svg';
-import { ReactComponent as EmailIcon } from 'assets/icons/emailIcon.svg';
-import { ReactComponent as PhoneIcon } from 'assets/icons/phoneIcon.svg';
-import { ReactComponent as InstagramIcon } from 'assets/icons/instagramIcon.svg';
+import { Icons } from "constantObjects/icon";
 
 const CircleIcons = styled.div`
    display: flex;
@@ -14,6 +11,13 @@ const CircleIcons = styled.div`
    height:60px;
    background: #212121;
    border-radius:30px;
+
+   @media(max-width: 575px){
+       margin-left: 43%;
+   }
+   @media(max-width: 414px){
+       margin-left:40%;
+   }
 `
 
 const Title = styled.h2`
@@ -34,29 +38,19 @@ const SubTitle = styled.p`
 
 
 function Information() {
+
+    const icons = Icons;
+
     return (
         <Container>
             <Row>
-                <Col sm={6} md={6} lg={3}>
-                    <CircleIcons><SmileIcon /></CircleIcons>
-                    <Title>Meu Nome</Title>
-                    <SubTitle>José Henrique</SubTitle>
-                </Col>
-                <Col sm={6} md={6} lg={3}>
-                    <CircleIcons><EmailIcon /></CircleIcons>
-                    <Title>E-mail</Title>
-                    <SubTitle>henriquedutra026@gmail.com</SubTitle>
-                </Col>
-                <Col sm={6} md={6} lg={3}>
-                    <CircleIcons><InstagramIcon /></CircleIcons>
-                    <Title>Instagram</Title>
-                    <SubTitle>@zezrick</SubTitle>
-                </Col>
-                <Col sm={6} md={6} lg={3}>
-                    <CircleIcons><PhoneIcon /></CircleIcons>
-                    <Title>Telefone</Title>
-                    <SubTitle>(61)99324-0442</SubTitle>
-                </Col>
+                {icons.map(icon => (
+                    <Col key={icon.id}  sm={6} md={6} lg={3}>
+                        <CircleIcons>{icon.icon}</CircleIcons>
+                        <Title>{icon.title}</Title>
+                        <SubTitle>{icon.subtitle}</SubTitle>
+                    </Col>))}
+
             </Row>
         </Container>
 

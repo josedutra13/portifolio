@@ -1,4 +1,5 @@
 import About from 'components/About';
+import Footer from 'components/Footer/footer';
 import { Layout } from 'components/Layout';
 import Projects from 'components/Projects';
 import Tecnology from 'components/Tecnologys';
@@ -16,6 +17,7 @@ function App() {
         <Projects/>
         <Tecnology/>
       </Layout>
+      <Footer/>
     </React.Fragment>
 
   );

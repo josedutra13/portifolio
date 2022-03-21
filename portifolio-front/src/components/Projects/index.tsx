@@ -1,7 +1,8 @@
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 
-import { ProjectsObject } from "StaticObject/projects";
+import { ProjectsObject } from "constantObjects/projects";
+import { ReactComponent as Link } from "assets/icons/link.svg";
 
 const Ph2 = styled.h2`
    margin-top: 13%;
@@ -88,7 +89,7 @@ function Projects() {
                 <Ph2>Projetos</Ph2>
                 <Row>
                     {projects.map(e =>(
-                            <Col key={e.id} md={6} lg={4}>
+                            <Col key={e.id} md={6} lg={6} xl={4}>
                             <Card>
                                 <Card.Body>
                                 <Card.Img variant="top" src={e.img} />
@@ -98,7 +99,9 @@ function Projects() {
                                     <Card.Subtitle>
                                         Tecnologias: {e.tecnologias}
                                     </Card.Subtitle>
-                                    <a target={"_blank"} href={e.link} rel="noreferrer"><Button>Visualizar</Button></a>
+                                    <a target={"_blank"} href={e.link} rel="noreferrer"><Button>
+                                        <Link style={{marginRight: "5px"}}/>
+                                        Visualizar</Button></a>
                                 </Card.Body>
                                 
                             </Card>

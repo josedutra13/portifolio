@@ -8,7 +8,7 @@ const Abouth2 = styled.h2`
    font-size: 32px;
    line-height: 42px;
    text-align: center;
-   margin: 8% 0 2% 0;
+   margin: 20% 0 2% 0;
 `
 const Aboutp = styled.p`
   font-weight: 400;
@@ -21,14 +21,13 @@ const Aboutp = styled.p`
 
 function About() {
     return (
-            <Container id='about'>
-                <Abouth2>Sobre mim</Abouth2>
-                <Aboutp>
-                    Graduado em Ciência da Computação. Tenho experiência em projetos voltados pra web com a utilização das tecnologias Spring Boot , Angular8 e AngularJs , também possuo experiência com desenvolvimento mobile utilizando o flutter . Atualmente me dedicando no desenvolvimento mobile, e futuramente pretendo me aprimorar também no front-end web. Em busca de uma oportunidade de realocação.
-                </Aboutp>
-                <Information />
-            </Container>
-
+        <Container id="about">
+            <Abouth2>Sobre mim</Abouth2>
+            <Aboutp>
+                Graduado em Ciência da Computação. Tenho experiência em projetos voltados pra web com a utilização das tecnologias Spring Boot , Angular8 e AngularJs , também possuo experiência com desenvolvimento mobile utilizando o flutter . Atualmente me dedicando no desenvolvimento mobile, e futuramente pretendo me aprimorar também no front-end web. Em busca de uma oportunidade de realocação.
+            </Aboutp>
+            <Information />
+        </Container>
     )
 }
 
