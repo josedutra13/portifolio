@@ -3,12 +3,12 @@ import styled from "styled-components";
 const FooterDiv = styled.footer`
   background: #212121;
   width: 100%;
-  height:60px;
-  margin-top:10%;
+  height:50px;
+  margin-top:15%;
+  padding-top:1%;
 `
 
 const FooterP = styled.p`
-  padding-top:5%;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
