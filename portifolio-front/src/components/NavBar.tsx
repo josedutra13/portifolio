@@ -29,7 +29,7 @@ function NavBar() {
         <Style>
             <Navbar collapseOnSelect expand="lg" variant="dark" sticky='top' >
                 <Container>
-                    <Navbar.Brand href="#welcome">Portifólio</Navbar.Brand>
+                    <Navbar.Brand href="#welcome">Portfólio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav>
