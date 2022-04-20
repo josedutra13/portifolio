@@ -18,11 +18,11 @@ const FooterP = styled.p`
 `
 
 
-function Footer(){
-  return(
-  <FooterDiv>
+function Footer() {
+  return (
+    <FooterDiv>
       <FooterP>&copy; 2021 José Henrique | Desenvolvedor FullStack/Mobile </FooterP>
-  </FooterDiv>
+    </FooterDiv>
   )
 }
 

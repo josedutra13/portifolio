@@ -19,3 +19,11 @@ a:hover {
     text-decoration: none;
     color: unset;
 }
+
+#about, #projects , #skills {
+    padding-top: 2px;
+}
+
+#welcome{
+    padding-top: 80px;
+}

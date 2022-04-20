@@ -45,7 +45,7 @@ function Information() {
         <Container>
             <Row>
                 {icons.map(icon => (
-                    <Col key={icon.id}  sm={6} md={6} lg={3}>
+                    <Col key={icon.id} sm={6} md={6} lg={3}>
                         <CircleIcons>{icon.icon}</CircleIcons>
                         <Title>{icon.title}</Title>
                         <SubTitle>{icon.subtitle}</SubTitle>

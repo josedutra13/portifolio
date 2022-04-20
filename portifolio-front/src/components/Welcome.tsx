@@ -1,8 +1,8 @@
 import { ReactComponent as Profile } from 'assets/img/profile.svg';
-import {Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
-import {ReactComponent as LogoGit} from 'assets/img/logotipo-do-github.svg';
-import {ReactComponent as CvLogo} from 'assets/img/documento.svg';
+import { ReactComponent as LogoGit } from 'assets/img/logotipo-do-github.svg';
+import { ReactComponent as CvLogo } from 'assets/img/documento.svg';
 
 const WelcomeStyle = styled.div`
   display:flex;
@@ -80,23 +80,23 @@ const ButtonContact = styled(ButtonCV)`
 
 
 function Welcome() {
-    return (
-        <WelcomeStyle>
-            <Container id='welcome'>
-                <Row>
-                    <Col md={8}>
-                        <H2Welcome>Olá, eu sou o José Henrique !</H2Welcome>
-                        <Paragrath>Desenvolvedor Fullstack/Mobile</Paragrath>
-                        <ButtonCV><a target={"_blank"} href='https://drive.google.com/file/d/1x5fKDEDIBvm-a1lDexHT7D-m9vw522Vx/view?usp=sharing' rel="noreferrer"><CvLogo id='logoCV'/>Visualizar CV</a>  </ButtonCV>
-                        <ButtonContact ><a target={"_blank"} href='https://github.com/josedutra13' rel="noreferrer"> <LogoGit id='logoGit'/>josedutra13</a> </ButtonContact>
-                    </Col>
-                    <Col md={4}>
-                    <Profile id='profilePic'></Profile></Col>
-                </Row>
-            </Container>
-        </WelcomeStyle>
+  return (
+    <WelcomeStyle>
+      <Container id='welcome'>
+        <Row>
+          <Col md={8}>
+            <H2Welcome>Olá, eu sou o José Henrique !</H2Welcome>
+            <Paragrath>Desenvolvedor Fullstack/Mobile</Paragrath>
+            <ButtonCV><a target={"_blank"} href='https://drive.google.com/file/d/1x5fKDEDIBvm-a1lDexHT7D-m9vw522Vx/view?usp=sharing' rel="noreferrer"><CvLogo id='logoCV' />Visualizar CV</a>  </ButtonCV>
+            <ButtonContact ><a target={"_blank"} href='https://github.com/josedutra13' rel="noreferrer"> <LogoGit id='logoGit' />josedutra13</a> </ButtonContact>
+          </Col>
+          <Col md={4}>
+            <Profile id='profilePic'></Profile></Col>
+        </Row>
+      </Container>
+    </WelcomeStyle>
 
-    );
+  );
 }
 
 export default Welcome;

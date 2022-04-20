@@ -27,7 +27,7 @@ const Style = styled.header`
 function NavBar() {
     return (
         <Style>
-            <Navbar collapseOnSelect expand="lg" variant="dark" sticky='top' >
+            <Navbar collapseOnSelect expand="lg" variant="dark" fixed='top'>
                 <Container>
                     <Navbar.Brand href="#welcome">Portfólio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />

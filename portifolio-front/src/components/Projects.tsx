@@ -90,7 +90,7 @@ function Projects() {
                 <Row>
                     {projects.map(e =>(
                             <Col key={e.id} md={6} lg={6} xl={4}>
-                            <Card>
+                            <Card >
                                 <Card.Body>
                                 <Card.Img variant="top" src={e.img} />
                                     <Card.Title>
